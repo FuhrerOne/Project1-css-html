@@ -1,0 +1,137 @@
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  margin: 0;
+  background-color: #f4f1ea;
+  color: #2b2b2b;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #1f3a5f;
+  color: #fff;
+  text-align: center;
+  padding: 28px 16px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 34px;
+}
+
+header p {
+  margin: 6px 0 0;
+  font-style: italic;
+  color: #d6e2f0;
+}
+
+nav {
+  background-color: #14263f;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 16px;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+}
+
+nav a:hover {
+  color: #f2b134;
+  text-decoration: underline;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+section {
+  margin-bottom: 32px;
+}
+
+h2 {
+  color: #1f3a5f;
+  border-bottom: 3px solid #f2b134;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 16px;
+}
+
+.bundle {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  border-top: 5px solid #1f3a5f;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s;
+}
+
+.bundle:hover {
+  transform: translateY(-4px);
+}
+
+.bundle h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.package {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.prices {
+  font-weight: bold;
+  color: #1f3a5f;
+  margin: 10px 0;
+}
+
+.Availability {
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 12px;
+  background-color: #909390;
+  color: #d4ffdd;
+}
+
+.Availability.non {
+  background-color: #f5d9d9;
+  color: #8a1f1f;
+}
+
+address {
+  font-style: normal;
+  background: #fff;
+  padding: 14px;
+  border-left: 4px solid #f2b134;
+  border-radius: 4px;
+}
+
+address a {
+  color: #1f3a5f;
+}
+
+footer {
+  background-color: #14263f;
+  color: #d6e2f0;
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  header h1 { font-size: 26px; }
+  nav a { display: inline-block; margin: 4px 10px; }
+}
